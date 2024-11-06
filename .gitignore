@@ -38,6 +38,7 @@ build/Release
 ## Compiled JavaScript files
 **/*.js
 **/*.js.map
+**/*.tsbuildinfo
 
 # Typescript v1 declaration files
 typings/

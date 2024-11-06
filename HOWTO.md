@@ -1,11 +1,19 @@
 # Spin up
 
-`docker compose up`
+```bash
+docker compose up
+```
 
 # DEV
 
-`yarn dev`
-
+```bash
+docker compose up db
+yarn
+yarn core build
+yarn dev
+```
 # TEST
 
-`yarn test`
+```bash
+yarn test
+```
