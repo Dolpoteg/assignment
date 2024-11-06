@@ -1,0 +1,25 @@
+{
+  "name": "lepaya-assesment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/client",
+    "packages/core",
+    "packages/server"
+  ],
+  "scripts": {
+    "client": "yarn workspace @lepaya/client",
+    "core": "yarn workspace @lepaya/core",
+    "server": "yarn workspace @lepaya/server",
+    "dev": "yarn client dev & yarn server dev --verbose",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
+    "start": "yarn server start",
+    "test": "yarn core test"
+  },
+  "dependencies": {
+    "globals": "^15.12.0",
+    "typescript-eslint": "^8.13.0"
+  }
+}
